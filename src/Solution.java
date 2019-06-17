@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 
 class Solution {
-    /*
+
+    /**
      * Helper function to check if one tree is a subtree of another tree
      * @param T The root of the main tree being looked at
      * @param S The root of the subtree to look for
@@ -17,7 +18,7 @@ class Solution {
         return isSubtree(T.left, S) || isSubtree(T.right, S);
     }
 
-    /*
+    /**
      * Helper function to check if two trees are equal
      * @param root1 Root of tree1
      * @param root2 Root of tree2
@@ -35,7 +36,7 @@ class Solution {
                 && areIdentical(root1.right, root2.right));
     }
 
-    /*
+    /**
      * Helper function to create and store the inorder traversal of a tree
      * @param root Root of tree
      * @return Returns the inorder traversal as a Integer ArrayList
